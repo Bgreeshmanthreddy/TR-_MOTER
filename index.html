@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TR Motors | Premium Car Showroom</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css?v=2">
+    <script src="js/auth.js?v=2" defer></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <img src="images/tr.jpeg" alt="TR Motors Logo">
+            <span>TR <b>MOTORS</b></span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#categories">Categories</a>
+            <a href="#electric">Electric</a>
+            <a href="#offers">Offers</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <a href="#test-drive" class="nav-button">
+                Book Test Drive
+            </a>
+
+            <div class="auth-slot" id="authSlot">
+                <button type="button" class="auth-trigger">
+                    Sign In
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                TR MOTORS • PREMIUM AUTOMOTIVE
+            </p>
+
+            <h1>
+                DRIVE YOUR
+                <span>DREAM.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover premium cars, powerful SUVs,
+                electric innovation and unforgettable
+                driving experiences.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#cars" class="button primary">
+                    Explore Cars →
+                </a>
+
+                <a href="#test-drive" class="button outline">
+                    Book a Test Drive
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>50+</strong>
+                <span>Premium Cars</span>
+            </div>
+
+            <div>
+                <strong>15+</strong>
+                <span>Top Brands</span>
+            </div>
+
+            <div>
+                <strong>10K+</strong>
+                <span>Happy Customers</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED CARS ================= -->
+
+    <section class="section" id="cars">
+
+        <div class="section-heading">
+
+            <div>
+                <p>OUR COLLECTION</p>
+                <h2>Featured Cars</h2>
+            </div>
+
+            <a href="#">View All Cars →</a>
+
+        </div>
+
+
+        <div class="car-grid">
+
+
+            <!-- CAR 1 -->
+
+            <article class="car-card">
+
+                <div class="car-image bmw">
+                    <span>PREMIUM</span>
+                    <button>♡</button>
+                </div>
+
+                <div class="car-info">
+
+                    <small>BMW</small>
+
+                    <h3>BMW 3 Series</h3>
+
+                    <p>Sport Sedan</p>
+
+                    <div class="specifications">
+                        <span>⛽ Petrol</span>
+                        <span>⚙ Automatic</span>
+                        <span>5 Seats</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <div>
+                            <small>Starting from</small>
+                            <strong>₹46.5 Lakh*</strong>
+                        </div>
+
+                        <a href="#">Details →</a>
+
+                    </div>
+
+                    <button type="button" class="car-book-btn" data-car="BMW 3 Series"
+                        data-price="₹46.5 Lakh*">
+                        Book This Car →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 2 -->
+
+            <article class="car-card">
+
+                <div class="car-image mercedes">
+                    <span>LUXURY</span>
+                    <button>♡</button>
+                </div>
+
+                <div class="car-info">
+
+                    <small>MERCEDES-BENZ</small>
+
+                    <h3>C-Class</h3>
+
+                    <p>Luxury Sedan</p>
+
+                    <div class="specifications">
+                        <span>⛽ Petrol</span>
+                        <span>⚙ Automatic</span>
+                        <span>5 Seats</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <div>
+                            <small>Starting from</small>
+                            <strong>₹61.2 Lakh*</strong>
+                        </div>
+
+                        <a href="#">Details →</a>
+
+                    </div>
+
+                    <button type="button" class="car-book-btn"
+                        data-car="Mercedes-Benz C-Class" data-price="₹61.2 Lakh*">
+                        Book This Car →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 3 -->
+
+            <article class="car-card">
+
+                <div class="car-image audi">
+                    <span>PREMIUM</span>
+                    <button>♡</button>
+                </div>
+
+                <div class="car-info">
+
+                    <small>AUDI</small>
+
+                    <h3>Audi Q7</h3>
+
+                    <p>Luxury SUV</p>
+
+                    <div class="specifications">
+                        <span>⛽ Petrol</span>
+                        <span>⚙ Automatic</span>
+                        <span>7 Seats</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <div>
+                            <small>Starting from</small>
+                            <strong>₹90 Lakh*</strong>
+                        </div>
+
+                        <a href="#">Details →</a>
+
+                    </div>
+
+                    <button type="button" class="car-book-btn" data-car="Audi Q7"
+                        data-price="₹90 Lakh*">
+                        Book This Car →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CAR 4 -->
+
+            <article class="car-card">
+
+                <div class="car-image porsche">
+                    <span>SPORTS</span>
+                    <button>♡</button>
+                </div>
+
+                <div class="car-info">
+
+                    <small>PORSCHE</small>
+
+                    <h3>Porsche 911</h3>
+
+                    <p>Sports Car</p>
+
+                    <div class="specifications">
+                        <span>⛽ Petrol</span>
+                        <span>⚙ Automatic</span>
+                        <span>2+2 Seats</span>
+                    </div>
+
+                    <div class="price-row">
+
+                        <div>
+                            <small>Starting from</small>
+                            <strong>₹1.99 Crore*</strong>
+                        </div>
+
+                        <a href="#">Details →</a>
+
+                    </div>
+
+                    <button type="button" class="car-book-btn" data-car="Porsche 911"
+                        data-price="₹1.99 Crore*">
+                        Book This Car →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories" id="categories">
+
+        <div class="section-heading">
+
+            <div>
+                <p>FIND YOUR STYLE</p>
+                <h2>Explore By Category</h2>
+            </div>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <a href="#cars" class="category">
+                <div>
+                    <span>✦</span>
+                    <h3>Luxury</h3>
+                    <p>Premium comfort & elegance</p>
+                </div>
+                <strong>→</strong>
+            </a>
+
+
+            <a href="#cars" class="category">
+                <div>
+                    <span>◆</span>
+                    <h3>SUVs</h3>
+                    <p>Power for every adventure</p>
+                </div>
+                <strong>→</strong>
+            </a>
+
+
+            <a href="#cars" class="category">
+                <div>
+                    <span>◉</span>
+                    <h3>Sports</h3>
+                    <p>Performance without limits</p>
+                </div>
+                <strong>→</strong>
+            </a>
+
+
+            <a href="#electric" class="category">
+                <div>
+                    <span>⚡</span>
+                    <h3>Electric</h3>
+                    <p>Drive the future</p>
+                </div>
+                <strong>→</strong>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= POPULAR CARS ================= -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <p>CUSTOMER FAVOURITES</p>
+                <h2>Popular Cars</h2>
+            </div>
+
+            <a href="#">Explore Collection →</a>
+
+        </div>
+
+
+        <div class="popular-grid">
+
+
+            <article class="popular-card">
+
+                <div class="popular-image car1">
+                    <span>SUV</span>
+                </div>
+
+                <div class="popular-info">
+
+                    <h3>BMW X5</h3>
+
+                    <div class="rating">
+                        ★★★★★ <b>4.8</b>
+                    </div>
+
+                    <p>Premium SUV • Petrol</p>
+
+                    <strong>₹97 Lakh*</strong>
+
+                    <button type="button" class="car-book-btn" data-car="BMW X5"
+                        data-price="₹97 Lakh*">
+                        Book This Car →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="popular-card">
+
+                <div class="popular-image car2">
+                    <span>SUV</span>
+                </div>
+
+                <div class="popular-info">
+
+                    <h3>Mercedes-Benz GLE</h3>
+
+                    <div class="rating">
+                        ★★★★★ <b>4.9</b>
+                    </div>
+
+                    <p>Luxury SUV • Petrol / Diesel</p>
+
+                    <strong>₹1 Crore*</strong>
+
+                    <button type="button" class="car-book-btn"
+                        data-car="Mercedes-Benz GLE" data-price="₹1 Crore*">
+                        Book This Car →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="popular-card">
+
+                <div class="popular-image car3">
+                    <span>SUV</span>
+                </div>
+
+                <div class="popular-info">
+
+                    <h3>Audi Q7</h3>
+
+                    <div class="rating">
+                        ★★★★★ <b>4.7</b>
+                    </div>
+
+                    <p>Premium SUV • Petrol</p>
+
+                    <strong>₹90 Lakh*</strong>
+
+                    <button type="button" class="car-book-btn" data-car="Audi Q7"
+                        data-price="₹90 Lakh*">
+                        Book This Car →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ELECTRIC ================= -->
+
+    <section class="electric" id="electric">
+
+        <div class="electric-content">
+
+            <p>THE ELECTRIC ERA</p>
+
+            <h2>
+                POWER YOUR
+                <span>FUTURE.</span>
+            </h2>
+
+            <p>
+                Experience instant performance,
+                intelligent technology and
+                sustainable mobility.
+            </p>
+
+            <a href="#cars" class="button primary">
+                Explore Electric Cars →
+            </a>
+
+        </div>
+
+
+        <div class="electric-stats">
+
+            <div>
+                <strong>500+</strong>
+                <span>KM Range</span>
+            </div>
+
+            <div>
+                <strong>0%</strong>
+                <span>Tailpipe Emissions</span>
+            </div>
+
+            <div>
+                <strong>⚡</strong>
+                <span>Instant Torque</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OFFERS ================= -->
+
+    <section class="section" id="offers">
+
+        <div class="section-heading">
+
+            <div>
+                <p>EXCLUSIVE DEALS</p>
+                <h2>Special Offers</h2>
+            </div>
+
+        </div>
+
+
+        <div class="offers-grid">
+
+
+            <article class="offer">
+
+                <div class="offer-icon">
+                    🚗
+                </div>
+
+                <div>
+
+                    <small>NEW CAR OFFER</small>
+
+                    <h3>
+                        Drive Home Your Dream Car
+                    </h3>
+
+                    <p>
+                        Attractive finance options
+                        available on selected models.
+                    </p>
+
+                    <a href="#">Know More →</a>
+
+                </div>
+
+            </article>
+
+
+            <article class="offer">
+
+                <div class="offer-icon">
+                    💰
+                </div>
+
+                <div>
+
+                    <small>EXCHANGE OFFER</small>
+
+                    <h3>
+                        Upgrade Your Drive
+                    </h3>
+
+                    <p>
+                        Exchange your old vehicle
+                        and unlock exciting benefits.
+                    </p>
+
+                    <a href="#">Check Offer →</a>
+
+                </div>
+
+            </article>
+
+
+            <article class="offer">
+
+                <div class="offer-icon">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <small>ELECTRIC OFFER</small>
+
+                    <h3>
+                        Switch To Electric
+                    </h3>
+
+                    <p>
+                        Discover special benefits
+                        on selected EV models.
+                    </p>
+
+                    <a href="#">Explore EVs →</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TEST DRIVE ================= -->
+
+    <section class="test-drive" id="test-drive">
+
+        <div>
+
+            <p>EXPERIENCE IT YOURSELF</p>
+
+            <h2>
+                Your Dream Car
+                <span>Is Waiting.</span>
+            </h2>
+
+            <p>
+                Book a test drive and experience
+                the performance, comfort and
+                technology for yourself.
+            </p>
+
+        </div>
+
+
+        <form id="testDriveForm" novalidate>
+
+            <input
+                type="text"
+                name="name"
+                id="testDriveName"
+                placeholder="Full Name"
+                autocomplete="name"
+                required
+            >
+
+            <input
+                type="tel"
+                name="phone"
+                id="testDrivePhone"
+                placeholder="Phone Number"
+                autocomplete="tel"
+                required
+            >
+
+            <select name="car" id="testDriveCar" required>
+
+                <option value="">
+                    Select Car
+                </option>
+
+                <option>
+                    BMW 3 Series
+                </option>
+
+                <option>
+                    BMW X5
+                </option>
+
+                <option>
+                    Mercedes-Benz C-Class
+                </option>
+
+                <option>
+                    Mercedes-Benz GLE
+                </option>
+
+                <option>
+                    Audi Q7
+                </option>
+
+                <option>
+                    Porsche 911
+                </option>
+
+            </select>
+
+            <p class="form-message" id="testDriveMessage" role="status"></p>
+
+            <button type="submit" id="testDriveSubmit">
+                Book Test Drive →
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <p>CUSTOMER STORIES</p>
+                <h2>What Our Customers Say</h2>
+            </div>
+
+        </div>
+
+
+        <div class="review-grid">
+
+
+            <article class="review">
+
+                <span class="quote">"</span>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Excellent showroom experience.
+                    The team helped me choose the
+                    perfect car for my family.
+                </p>
+
+                <strong>Rahul K.</strong>
+
+                <small>
+                    BMW X5 Owner
+                </small>
+
+            </article>
+
+
+            <article class="review">
+
+                <span class="quote">"</span>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Very professional service and
+                    a smooth test-drive experience.
+                    Highly recommended.
+                </p>
+
+                <strong>Priya S.</strong>
+
+                <small>
+                    Mercedes-Benz Owner
+                </small>
+
+            </article>
+
+
+            <article class="review">
+
+                <span class="quote">"</span>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    I loved the collection of premium
+                    cars. The staff were knowledgeable
+                    and friendly.
+                </p>
+
+                <strong>Arjun R.</strong>
+
+                <small>
+                    Audi Owner
+                </small>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <p>ABOUT TR MOTORS</p>
+
+            <h2>
+                More Than A
+                <span>Showroom.</span>
+            </h2>
+
+            <p>
+                TR Motors is a premium automotive
+                showroom concept created for people
+                who believe that a car is more than
+                transportation.
+            </p>
+
+            <p>
+                From luxury sedans and powerful SUVs
+                to high-performance sports cars and
+                electric vehicles, discover a collection
+                designed around your lifestyle.
+            </p>
+
+            <a href="#contact" class="button outline">
+                Discover TR Motors →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <div>
+
+            <p>VISIT US</p>
+
+            <h2>
+                Let's Find Your
+                <span>Perfect Car.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-details">
+
+            <div>
+                <small>📍 SHOWROOM</small>
+
+                <p>
+                    TR Motors,<br>
+                    Guntur, Andhra Pradesh
+                </p>
+            </div>
+
+
+            <div>
+                <small>📞 CALL US</small>
+
+                <p>
+                    +91 90000 00000
+                </p>
+            </div>
+
+
+            <div>
+                <small>✉ EMAIL</small>
+
+                <p>
+                    hello@trmotors.com
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <img
+                    src="images/tr.jpeg"
+                    alt="TR Motors Logo"
+                >
+
+                <h3>TR Motors</h3>
+
+                <p>
+                    Premium cars.
+                    Exceptional experiences.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>Explore</h4>
+
+                <a href="#cars">Cars</a>
+                <a href="#categories">Categories</a>
+                <a href="#electric">Electric</a>
+                <a href="#offers">Offers</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Services</h4>
+
+                <a href="#test-drive">Test Drive</a>
+                <a href="#">Finance</a>
+                <a href="#">Exchange</a>
+                <a href="#">Insurance</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Connect</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 TR Motors. All Rights Reserved.
+            </span>
+
+            <span>
+                Designed using HTML5 & CSS3
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= AUTH MODAL ================= -->
+
+    <div class="modal" id="authModal" hidden>
+
+        <div class="modal-backdrop" data-modal-close></div>
+
+        <div class="modal-panel auth-panel" role="dialog" aria-modal="true"
+            aria-labelledby="authTitle">
+
+            <button type="button" class="modal-close" data-modal-close
+                aria-label="Close">
+                &times;
+            </button>
+
+            <p class="auth-eyebrow">TR MOTORS ACCOUNT</p>
+
+            <h2 id="authTitle">Welcome back.</h2>
+
+            <p class="auth-sub" id="authSub">
+                Sign in to manage your test drives.
+            </p>
+
+            <div class="auth-tabs">
+
+                <button type="button" class="auth-tab is-active"
+                    data-auth-tab="signin">
+                    Sign In
+                </button>
+
+                <button type="button" class="auth-tab"
+                    data-auth-tab="signup">
+                    Create Account
+                </button>
+
+            </div>
+
+
+            <form class="auth-form" id="signinForm" novalidate>
+
+                <label>
+                    Email
+                    <input type="email" name="email" autocomplete="email"
+                        placeholder="you@example.com" required>
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" name="password"
+                        autocomplete="current-password" placeholder="••••••••"
+                        required>
+                </label>
+
+                <p class="auth-error" id="signinError" role="alert"></p>
+
+                <button type="submit" class="auth-submit">
+                    Sign In →
+                </button>
+
+                <p class="auth-alt">
+                    New here?
+                    <button type="button" class="link-btn"
+                        data-auth-tab="signup">
+                        Create an account
+                    </button>
+                </p>
+
+            </form>
+
+
+            <form class="auth-form" id="signupForm" novalidate hidden>
+
+                <label>
+                    Full Name
+                    <input type="text" name="name" autocomplete="name"
+                        placeholder="Your name" required>
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" autocomplete="email"
+                        placeholder="you@example.com" required>
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" name="password"
+                        autocomplete="new-password"
+                        placeholder="At least 8 characters" required>
+                </label>
+
+                <p class="auth-error" id="signupError" role="alert"></p>
+
+                <button type="submit" class="auth-submit">
+                    Create Account →
+                </button>
+
+                <p class="auth-alt">
+                    Already have an account?
+                    <button type="button" class="link-btn"
+                        data-auth-tab="signin">
+                        Sign in
+                    </button>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MY BOOKINGS MODAL ================= -->
+
+    <div class="modal" id="bookingsModal" hidden>
+
+        <div class="modal-backdrop" data-modal-close></div>
+
+        <div class="modal-panel" role="dialog" aria-modal="true"
+            aria-labelledby="bookingsTitle">
+
+            <button type="button" class="modal-close" data-modal-close
+                aria-label="Close">
+                &times;
+            </button>
+
+            <p class="auth-eyebrow">YOUR ACCOUNT</p>
+
+            <h2 id="bookingsTitle">My Test Drives</h2>
+
+            <p class="auth-sub" id="bookingsSub"></p>
+
+            <div class="booking-list" id="bookingList"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CAR BOOKING MODAL ================= -->
+
+    <div class="modal" id="orderModal" hidden>
+
+        <div class="modal-backdrop" data-modal-close></div>
+
+        <div class="modal-panel order-panel" role="dialog" aria-modal="true"
+            aria-labelledby="orderTitle">
+
+            <button type="button" class="modal-close" data-modal-close
+                aria-label="Close">
+                &times;
+            </button>
+
+            <div id="orderFormWrap">
+
+                <p class="auth-eyebrow">CAR BOOKING</p>
+
+                <h2 id="orderTitle">Reserve your car.</h2>
+
+                <p class="auth-sub">
+                    Share your details and delivery preference — we'll call
+                    you to confirm the schedule.
+                </p>
+
+                <div class="order-car">
+
+                    <div>
+                        <small>SELECTED CAR</small>
+                        <strong id="orderCarName">—</strong>
+                    </div>
+
+                    <span class="order-price" id="orderCarPrice">—</span>
+
+                </div>
+
+                <form class="order-form" id="orderForm" novalidate>
+
+                    <fieldset>
+
+                        <legend>Your details</legend>
+
+                        <div class="order-grid">
+
+                            <label>
+                                Full name
+                                <input type="text" name="name"
+                                    autocomplete="name" required>
+                            </label>
+
+                            <label>
+                                Phone number
+                                <input type="tel" name="phone"
+                                    autocomplete="tel" required>
+                            </label>
+
+                            <label class="span-2">
+                                Email
+                                <input type="email" name="email"
+                                    autocomplete="email" readonly>
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>Delivery</legend>
+
+                        <div class="delivery-options">
+
+                            <label class="delivery-option">
+                                <input type="radio" name="method"
+                                    value="home" checked>
+                                <span>
+                                    <strong>Home delivery</strong>
+                                    <small>We bring the car to your address</small>
+                                </span>
+                            </label>
+
+                            <label class="delivery-option">
+                                <input type="radio" name="method"
+                                    value="showroom">
+                                <span>
+                                    <strong>Showroom pickup</strong>
+                                    <small>Collect it at TR Motors, Guntur</small>
+                                </span>
+                            </label>
+
+                        </div>
+
+                        <div class="order-grid" id="orderAddress">
+
+                            <label class="span-2">
+                                Address line 1
+                                <input type="text" name="address1"
+                                    autocomplete="address-line1"
+                                    placeholder="House / flat, street">
+                            </label>
+
+                            <label class="span-2">
+                                <span>Address line 2 <small>(optional)</small></span>
+                                <input type="text" name="address2"
+                                    autocomplete="address-line2"
+                                    placeholder="Area, landmark">
+                            </label>
+
+                            <label>
+                                City
+                                <input type="text" name="city"
+                                    autocomplete="address-level2">
+                            </label>
+
+                            <label>
+                                State
+                                <input type="text" name="state"
+                                    autocomplete="address-level1"
+                                    value="Andhra Pradesh">
+                            </label>
+
+                            <label class="span-2">
+                                PIN code
+                                <input type="text" name="pincode"
+                                    inputmode="numeric" maxlength="6"
+                                    autocomplete="postal-code"
+                                    placeholder="6-digit PIN">
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>Schedule &amp; payment</legend>
+
+                        <div class="order-grid">
+
+                            <label>
+                                Preferred date
+                                <input type="date" name="date" required>
+                            </label>
+
+                            <label>
+                                Time slot
+                                <select name="slot">
+                                    <option value="morning">Morning · 9am – 12pm</option>
+                                    <option value="afternoon" selected>Afternoon · 12pm – 4pm</option>
+                                    <option value="evening">Evening · 4pm – 7pm</option>
+                                </select>
+                            </label>
+
+                            <label class="span-2">
+                                Payment plan
+                                <select name="payment">
+                                    <option value="full">Full payment</option>
+                                    <option value="loan">Bank loan / finance</option>
+                                    <option value="exchange">Exchange my current car</option>
+                                </select>
+                            </label>
+
+                            <label class="span-2">
+                                <span>Notes <small>(optional)</small></span>
+                                <textarea name="notes" rows="3" maxlength="500"
+                                    placeholder="Anything we should know about the delivery"></textarea>
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+                    <p class="auth-error" id="orderError" role="alert"></p>
+
+                    <button type="submit" class="auth-submit" id="orderSubmit">
+                        Confirm Booking →
+                    </button>
+
+                    <p class="order-note">
+                        No payment is taken now. Our team will call you to
+                        confirm the booking and delivery.
+                    </p>
+
+                </form>
+
+            </div>
+
+
+            <div class="order-success" id="orderSuccess" hidden>
+
+                <div class="success-mark">✓</div>
+
+                <h2>Booking confirmed.</h2>
+
+                <p id="orderSuccessText"></p>
+
+                <div class="success-ref">
+                    <small>BOOKING REFERENCE</small>
+                    <strong id="orderRef">—</strong>
+                </div>
+
+                <button type="button" class="auth-submit" data-modal-close>
+                    Done
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MY ORDERS MODAL ================= -->
+
+    <div class="modal" id="ordersModal" hidden>
+
+        <div class="modal-backdrop" data-modal-close></div>
+
+        <div class="modal-panel" role="dialog" aria-modal="true"
+            aria-labelledby="ordersTitle">
+
+            <button type="button" class="modal-close" data-modal-close
+                aria-label="Close">
+                &times;
+            </button>
+
+            <p class="auth-eyebrow">YOUR ACCOUNT</p>
+
+            <h2 id="ordersTitle">My Orders</h2>
+
+            <p class="auth-sub" id="ordersSub"></p>
+
+            <div class="booking-list" id="orderList"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+</body>
+
+</html>
