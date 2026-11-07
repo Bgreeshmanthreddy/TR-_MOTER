@@ -59,8 +59,12 @@ function el(tag, className, text) {
 }
 
 async function api(path, options = {}) {
-  const response = await fetch(path, {
-    credentials: "same-origin",
+  const base = ["http://localhost:4000", "http://127.0.0.1:4000"].includes(location.origin)
+    ? ""
+    : "http://localhost:4000";
+
+  const response = await fetch(base + path, {
+    credentials: "include",
     ...options,
     headers: {
       ...(options.body ? { "Content-Type": "application/json" } : {}),
@@ -70,13 +74,22 @@ async function api(path, options = {}) {
 
   if (response.status === 204) return null;
 
-  const data = await response.json().catch(() => ({}));
+  const contentType = response.headers.get("content-type") || "";
+  const data = contentType.includes("application/json")
+    ? await response.json()
+    : null;
 
   if (!response.ok) {
-    const error = new Error(data.error || "Something went wrong. Try again.");
-    error.field = data.field;
+    const error = new Error(
+      data?.error || `Request failed with HTTP ${response.status}.`
+    );
+    error.field = data?.field;
     error.status = response.status;
     throw error;
+  }
+
+  if (data === null) {
+    throw new Error("The server returned an unexpected response.");
   }
 
   return data;
